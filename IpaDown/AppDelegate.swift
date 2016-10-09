@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        (UINavigationBar.appearance()).setBackgroundImage(UIImage(named: "top-bg")?.stretchableImageWithLeftCapWidth(0, topCapHeight: 0), forBarMetrics: .Default)
+        self.window?.rootViewController = MainTabBarController()
+        
         return true
     }
 
